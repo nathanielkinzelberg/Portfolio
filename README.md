@@ -26,12 +26,14 @@ portfolio/
 
 Just open `index.html` in a browser — no server needed.
 
+## Live site
+
+https://nathanielkinzelberg.github.io/Portfolio/
+
 ## Deploying
 
-Drop the folder onto any static host:
-- **GitHub Pages** — push to a repo, enable Pages on the `main` branch
-- **Netlify** — drag and drop the folder at netlify.com
-- **Vercel** — `vercel` CLI in this directory
+Hosted on GitHub Pages. Push to `main` and the site updates automatically.
+(Repo name is `Portfolio` with a capital P — the URL is case-sensitive.)
 
 ## To-do
 

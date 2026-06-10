@@ -37,6 +37,11 @@ C, C++, Python, Java, JavaScript, HTML/CSS, SQL, Git, Linux, Cybersecurity
 - SEC0 Pre-Security — TryHackMe, 18/05/2026 — https://assets.tryhackme.com/certification-certificate/6a0b42a9264d321dec2eff75.pdf
 - Web Penetration Testing — HackTheBox (in progress)
 
+## Live URL
+
+https://nathanielkinzelberg.github.io/Portfolio/
+(Capital P in repo name — URL is case-sensitive)
+
 ## Site structure
 
 Plain HTML/CSS/JS — no framework, no build step. Open `index.html` directly in a browser.
