@@ -354,11 +354,12 @@ section {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   line-height: 1.8;
+  color: #ccc;
 }
 .terminal-body p { margin: 0; }
-.t-prompt { color: #00ff88; margin-right: 6px; }
-.t-out    { color: #888; padding-left: 14px; }
-.t-cursor { animation: blink 0.8s step-end infinite; color: #00ff88; }
+.t-prompt { color: #00ff88 !important; margin-right: 6px; }
+.t-out    { color: #888 !important; padding-left: 14px; }
+.t-cursor { animation: blink 0.8s step-end infinite; color: #00ff88 !important; }
 
 /* ── project cards ── */
 .card-grid {
