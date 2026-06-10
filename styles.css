@@ -280,21 +280,42 @@ section {
   border: 1px solid var(--accent);
   border-radius: 4px;
 }
-/* initials avatar placeholder */
-.avatar-box {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  background: var(--accent-dim);
-  border: 2px solid var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-mono);
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--accent);
+/* mini terminal card replacing the avatar */
+.terminal-card {
+  width: 220px;
+  background: #111;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.5);
 }
+/* traffic light dots */
+.terminal-bar {
+  background: #1e1e1e;
+  padding: 8px 12px;
+  display: flex;
+  gap: 6px;
+  border-bottom: 1px solid var(--border);
+}
+.dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+}
+.dot.red    { background: #ff5f57; }
+.dot.yellow { background: #febc2e; }
+.dot.green  { background: #28c840; }
+/* terminal text */
+.terminal-body {
+  padding: 14px 16px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.8;
+}
+.terminal-body p { margin: 0; }
+.t-prompt { color: var(--accent); margin-right: 6px; }
+.t-out    { color: var(--muted); padding-left: 14px; }
+/* blinking block cursor */
+.t-cursor { animation: blink 0.8s step-end infinite; color: var(--accent); }
 
 /* ── project cards ── */
 .card-grid {
@@ -307,10 +328,14 @@ section {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 24px;
-  /* subtle depth shadow */
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
   transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+  /* stretch cards to equal height, pin tags+button to bottom */
+  display: flex;
+  flex-direction: column;
 }
+/* description grows to fill space, pushing tags + footer down */
+.card p { flex: 1; }
 .card:hover {
   border-color: var(--accent);
   transform: translateY(-4px);
@@ -332,6 +357,33 @@ section {
 .card-links a:hover { color: var(--accent); opacity: 1; }
 .card h3 { font-size: 1.1rem; margin-bottom: 8px; }
 .card p { font-size: 0.875rem; color: var(--muted); }
+.card-footer {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+/* GitHub / contact button on cards */
+.card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+  transition: background var(--transition), color var(--transition);
+}
+.card-btn:hover { background: var(--accent); color: #0f0f0f; opacity: 1; }
+/* contact variant — muted until hover */
+.card-btn-contact {
+  border-color: var(--muted);
+  color: var(--muted);
+}
+.card-btn-contact:hover { background: var(--muted); color: #0f0f0f; }
+
 .card-tags {
   display: flex;
   flex-wrap: wrap;
@@ -421,6 +473,9 @@ section {
   font-size: 0.8rem;
   color: var(--accent);
 }
+.ap-contact {
+  color: var(--muted) !important;
+}
 /* school / personal type tag */
 .ap-type {
   font-family: var(--font-mono);
@@ -447,6 +502,26 @@ section {
 }
 .resume-icon { font-size: 2rem; color: var(--accent); }
 .resume-box p { color: var(--muted); max-width: 400px; font-size: 0.9rem; }
+
+/* contact details inside resume box */
+.resume-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  width: 100%;
+  align-items: center;
+}
+.resume-contact span {
+  font-size: 0.82rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.resume-contact i { color: var(--accent); width: 14px; text-align: center; }
 
 /* ── certifications ── */
 .cert-grid {
@@ -518,6 +593,25 @@ section {
   transition: color var(--transition);
 }
 .social-links a:hover { color: var(--accent); opacity: 1; }
+
+/* contact details in contact section */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+.contact-details span {
+  font-size: 0.875rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.contact-details i { color: var(--accent); width: 16px; text-align: center; }
+.contact-note { font-size: 0.78rem; color: #555; }
 
 /* ── footer ── */
 footer {

@@ -14,13 +14,13 @@ portfolio/
 
 ## Sections
 
-- **Hero** — name, typing animation, CTA buttons
-- **About** — bio, skills
-- **School Projects** — academic work from Reichman University
-- **Personal Projects** — side projects
-- **Resume** — PDF download
-- **Certifications** — verified credentials
-- **Contact** — email + social links
+- **Hero** — name, typing animation (6 roles), stats strip, floating code fragments
+- **About** — bio, skill tags, mini terminal card
+- **School Projects** — OS HW1 (Sync Primitives), OS HW2 (User-Level Threads)
+- **Personal Projects** — MIPS Simulator, Portfolio; "All Projects" dropdown below
+- **Resume** — PDF download + contact details
+- **Certifications** — SEC0 (TryHackMe), HackTheBox Web Pentest (in progress)
+- **Contact** — email, phone numbers, GitHub, LinkedIn
 
 ## Running locally
 
@@ -35,7 +35,5 @@ Drop the folder onto any static host:
 
 ## To-do
 
-- [ ] Add GitHub profile URL to social links
-- [ ] Add more school and personal projects as they're completed
-- [ ] Add photo to replace the initials avatar
+- [ ] Add more projects as they're completed
 - [ ] Add more certifications as earned

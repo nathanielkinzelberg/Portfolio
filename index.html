@@ -72,11 +72,11 @@
         <div class="about-text">
           <p>
             I'm a 3rd-year CS student at Reichman University. Long-term I want to be a Red Team specialist,
-            but honestly I'm interested in all of it — hardware, firmware, software. Computers in general
+            but honestly I'm interested in all of it: hardware, firmware, software. Computers in general
             fascinate me and I'm always looking for ways to learn more, whatever form that takes.
           </p>
           <p>
-            Outside of tech, I'm an international powerlifting athlete — 2025 European silver medalist
+            Outside of tech, I'm an international powerlifting athlete. 2025 European silver medalist
             for the Bench Press representing Israel. The same discipline I bring to the platform,
             I bring to every line of code.
           </p>
@@ -87,9 +87,25 @@
             <span>Git</span><span>Linux</span><span>Cybersecurity</span>
           </div>
         </div>
-        <!-- placeholder avatar box -->
+        <!-- mini terminal card -->
         <div class="about-avatar">
-          <div class="avatar-box">NK</div>
+          <div class="terminal-card">
+            <div class="terminal-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="t-prompt">$</span> whoami</p>
+              <p class="t-out">nathaniel_kinzelberg</p>
+              <p><span class="t-prompt">$</span> cat interests.txt</p>
+              <p class="t-out">hardware, firmware,</p>
+              <p class="t-out">software, red team</p>
+              <p><span class="t-prompt">$</span> cat goals.txt</p>
+              <p class="t-out">get root on everything.</p>
+              <p><span class="t-prompt">$</span> <span class="t-cursor">▋</span></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -105,25 +121,29 @@
         <div class="card">
           <div class="card-header">
             <i class="fa-solid fa-lock card-icon"></i>
-            <div class="card-links">
-              <a href="https://github.com/ar00ster18/OS-HW-1" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            </div>
           </div>
           <h3>OS HW1 — Sync Primitives</h3>
           <p>Built semaphores, condition variables, and a read-write lock from scratch in C. Three progressively harder parts, each building on the last.</p>
           <div class="card-tags"><span>C</span><span>Threads</span><span>Synchronization</span><span>OS</span></div>
+          <div class="card-footer">
+            <a href="https://github.com/ar00ster18/OS-HW-1" class="card-btn" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
         </div>
 
         <div class="card">
           <div class="card-header">
             <i class="fa-solid fa-rotate card-icon"></i>
-            <div class="card-links">
-              <!-- add GitHub repo link when available -->
-            </div>
           </div>
           <h3>OS HW2 — User-Level Threads</h3>
           <p>Implemented a user-level thread library with a round-robin scheduler, context switching via setjmp/longjmp, and preemption using SIGVTALRM. Collaborated with a classmate.</p>
           <div class="card-tags"><span>C</span><span>Threads</span><span>Signals</span><span>OS</span></div>
+          <div class="card-footer">
+            <a href="#contact" class="card-btn card-btn-contact">
+              <i class="fa-solid fa-envelope"></i> Get In Touch
+            </a>
+          </div>
         </div>
 
       </div>
@@ -140,25 +160,29 @@
         <div class="card">
           <div class="card-header">
             <i class="fa-solid fa-microchip card-icon"></i>
-            <div class="card-links">
-              <a href="https://github.com/nathanielkinzelberg/MIPS_Simulator" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            </div>
           </div>
           <h3>MIPS Simulator</h3>
           <p>Inspired by my Digital Architectures course, I built this on my own to truly understand how low-level CPU instructions execute. Simulates a MIPS processor in C++.</p>
           <div class="card-tags"><span>C++</span><span>MIPS</span><span>Systems</span><span>Architecture</span></div>
+          <div class="card-footer">
+            <a href="https://github.com/nathanielkinzelberg/MIPS_Simulator" class="card-btn" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
         </div>
 
         <div class="card">
           <div class="card-header">
             <i class="fa-solid fa-globe card-icon"></i>
-            <div class="card-links">
-              <a href="https://github.com/nathanielkinzelberg/portfolio" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            </div>
           </div>
           <h3>This Portfolio</h3>
           <p>Hand-built portfolio site using plain HTML, CSS, and JavaScript. No frameworks — just clean code.</p>
           <div class="card-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          <div class="card-footer">
+            <a href="https://github.com/nathanielkinzelberg/portfolio" class="card-btn" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
         </div>
 
       </div>
@@ -184,6 +208,7 @@
               <span class="ap-type school">School</span>
             </div>
             <p>User-level thread library with round-robin scheduler, context switching via setjmp/longjmp, and SIGVTALRM preemption.</p>
+            <a href="#contact" class="ap-contact">Get In Touch &rarr;</a>
           </li>
           <!-- personal second -->
           <li>
@@ -220,6 +245,13 @@
         <a href="assets/Nathaniel Kinzelberg Resume - 2026.pdf" class="btn btn-primary" download>
           <i class="fa-solid fa-download"></i> Download Resume
         </a>
+        <div class="resume-contact">
+          <span><i class="fa-solid fa-envelope"></i> nathanielkinzelberg@icloud.com</span>
+          <span><i class="fa-brands fa-linkedin"></i> linkedin.com/in/nathaniel-kinzelberg</span>
+          <span><i class="fa-brands fa-github"></i> github.com/nathanielkinzelberg</span>
+          <span><i class="fa-solid fa-phone"></i> +972 053-476-1356 SMS</span>
+          <span><i class="fa-brands fa-whatsapp"></i> +1 (201) 220-4994</span>
+        </div>
       </div>
     </div>
   </section>
@@ -261,6 +293,10 @@
       <a href="mailto:nathanielkinzelberg@icloud.com" class="btn btn-primary contact-btn">
         <i class="fa-solid fa-envelope"></i> nathanielkinzelberg@icloud.com
       </a>
+      <div class="contact-details">
+        <span><i class="fa-solid fa-phone"></i> +972 053-476-1356 <span class="contact-note">SMS</span></span>
+        <span><i class="fa-brands fa-whatsapp"></i> +1 (201) 220-4994</span>
+      </div>
       <div class="social-links">
         <a href="https://github.com/nathanielkinzelberg" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/nathaniel-kinzelberg" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>

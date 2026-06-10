@@ -1,8 +1,10 @@
 // ── typing animation roles ──
 const roles = [
   'CS Student @ Reichman University',
-  'Cybersecurity Enthusiast',
   'Aspiring Red Team Specialist',
+  'Cybersecurity Enthusiast',
+  'Hardware & Firmware Curious',
+  'Low-Level Systems Thinker',
   'Powerlifting Athlete',
 ];
 
