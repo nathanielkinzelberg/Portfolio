@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nathaniel Kinzelberg</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- icons for certifications and social links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- clean monospace + sans-serif fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── sticky nav ── -->
+  <nav id="navbar">
+    <span class="nav-logo">&gt; nk</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#school">School</a></li>
+      <li><a href="#personal">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#certs">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- hamburger for mobile -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── hero ── -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Nathaniel Kinzelberg</h1>
+      <!-- typing animation cycles through these roles -->
+      <p class="hero-role"><span id="typed-text"></span><span class="cursor">|</span></p>
+      <div class="hero-btns">
+        <a href="#personal" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <!-- decorative background grid -->
+    <div class="hero-grid" aria-hidden="true"></div>
+  </section>
+
+  <!-- ── about ── -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a 3rd-year Computer Science student at Reichman University in Israel, with a strong
+            focus on cybersecurity and a long-term goal of becoming a Red Team specialist. I have
+            hands-on experience from internships in IT and cybersecurity, and I enjoy building
+            low-level systems and understanding how things work under the hood.
+          </p>
+          <p>
+            Outside of tech, I'm an international powerlifting athlete — 2025 European silver medalist
+            for the Bench Press representing Israel. The same discipline I bring to the platform,
+            I bring to every line of code.
+          </p>
+          <!-- skill tags — add or remove freely -->
+          <div class="skill-tags">
+            <span>C</span><span>C++</span><span>Python</span><span>Java</span>
+            <span>JavaScript</span><span>HTML/CSS</span><span>SQL</span>
+            <span>Git</span><span>Linux</span><span>Cybersecurity</span>
+          </div>
+        </div>
+        <!-- placeholder avatar box -->
+        <div class="about-avatar">
+          <div class="avatar-box">NK</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── school projects ── -->
+  <section id="school">
+    <div class="container">
+      <h2 class="section-title">School Projects</h2>
+      <p class="section-sub">Academic work from coursework and labs.</p>
+      <div class="card-grid">
+
+        <!-- card template — duplicate and fill in for each project -->
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-microchip card-icon"></i>
+            <div class="card-links">
+              <a href="https://github.com/nathanielkinzelberg/MIPS-Simulator" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>MIPS Simulator</h3>
+          <p>A simulation of how basic low-level instructions execute on a CPU, built to deepen understanding of computer architecture and instruction sets.</p>
+          <div class="card-tags"><span>C++</span><span>MIPS</span><span>Systems</span><span>Architecture</span></div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-database card-icon"></i>
+            <div class="card-links">
+              <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Project Title</h3>
+          <p>Short description of what it does, what problem it solves, and what you learned.</p>
+          <div class="card-tags"><span>Python</span><span>SQL</span></div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-network-wired card-icon"></i>
+            <div class="card-links">
+              <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Project Title</h3>
+          <p>Short description of what it does, what problem it solves, and what you learned.</p>
+          <div class="card-tags"><span>Java</span><span>Networking</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── personal projects ── -->
+  <section id="personal">
+    <div class="container">
+      <h2 class="section-title">Personal Projects</h2>
+      <p class="section-sub">Things I built on my own time.</p>
+      <div class="card-grid">
+
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-globe card-icon"></i>
+            <div class="card-links">
+              <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" title="Live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>This Portfolio</h3>
+          <p>Hand-built portfolio site using plain HTML, CSS, and JavaScript. No frameworks — just clean code.</p>
+          <div class="card-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-terminal card-icon"></i>
+            <div class="card-links">
+              <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Project Title</h3>
+          <p>Short description. What does it do? Why did you build it?</p>
+          <div class="card-tags"><span>Python</span></div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-code card-icon"></i>
+            <div class="card-links">
+              <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Project Title</h3>
+          <p>Short description. What does it do? Why did you build it?</p>
+          <div class="card-tags"><span>JavaScript</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── resume ── -->
+  <section id="resume">
+    <div class="container">
+      <h2 class="section-title">Resume</h2>
+      <div class="resume-box">
+        <i class="fa-solid fa-file-lines resume-icon"></i>
+        <p>Download my resume to see my full education, experience, and skills.</p>
+        <a href="assets/Nathaniel Kinzelberg Resume - 2026.pdf" class="btn btn-primary" download>
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── certifications ── -->
+  <section id="certs">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+      <p class="section-sub">Credentials I've earned.</p>
+      <div class="cert-grid">
+
+        <div class="cert-card">
+          <i class="fa-solid fa-shield-halved cert-icon"></i>
+          <div class="cert-info">
+            <h4>SEC0 — Pre-Security</h4>
+            <p>TryHackMe &mdash; <span class="cert-date">2025</span></p>
+          </div>
+          <a href="https://assets.tryhackme.com/certification-certificate/6a0b42a9264d321dec2eff75.pdf" class="cert-verify" target="_blank" rel="noopener">Verify</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── contact ── -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-sub">I'm open to opportunities, collaborations, or just a conversation.</p>
+      <a href="mailto:nathanielkinzelberg@icloud.com" class="btn btn-primary contact-btn">
+        <i class="fa-solid fa-envelope"></i> nathanielkinzelberg@icloud.com
+      </a>
+      <div class="social-links">
+        <a href="https://github.com/nathanielkinzelberg" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nathaniel-kinzelberg" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── footer ── -->
+  <footer>
+    <p>Built by Nathaniel Kinzelberg &mdash; <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
