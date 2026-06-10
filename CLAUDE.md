@@ -47,9 +47,11 @@ https://nathanielkinzelberg.github.io/Portfolio/
 Plain HTML/CSS/JS — no framework, no build step. Open `index.html` directly in a browser.
 
 Key design choices:
-- Dark techy theme: `#0f0f0f` bg, `#00ff88` accent, JetBrains Mono + Inter fonts
-- Hero: pulsing glow on name, typing animation (6 roles), stats strip, floating code fragments
-- About: mini terminal card (replaces avatar) showing whoami + interests
+- **Two themes:** dark (default) = `#0f0f0f` bg + `#00ff88` accent; light = `#e8e0d0` beige bg + `#c4922a` gold accent
+- Toggle button (sun/moon) in nav; preference saved to localStorage; dark is the default
+- Terminal card in About stays dark in both themes
+- Hero: pulsing glow on name, typing animation (5 roles), stats strip, floating code fragments
+- About: mini terminal card showing whoami + interests + goals
 - Project cards: equal height via flexbox, tags + GitHub/contact button pinned to bottom
 - All Projects dropdown: sorted School first, then Personal, with type tags
 - Cards without a GitHub repo get a "Get In Touch" button linking to #contact

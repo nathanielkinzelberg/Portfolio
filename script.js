@@ -1,10 +1,29 @@
+// ── theme toggle ──
+const toggleBtn = document.getElementById('theme-toggle');
+const icon = toggleBtn.querySelector('i');
+
+// load saved preference, default to dark
+const savedTheme = localStorage.getItem('theme') || 'dark';
+applyTheme(savedTheme);
+
+toggleBtn.addEventListener('click', () => {
+  const current = document.documentElement.getAttribute('data-theme');
+  applyTheme(current === 'light' ? 'dark' : 'light');
+});
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+  // sun = currently dark (click to go light), moon = currently light (click to go dark)
+  icon.className = theme === 'light' ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+}
+
 // ── typing animation roles ──
 const roles = [
   'CS Student @ Reichman University',
   'Aspiring Red Team Specialist',
   'Cybersecurity Enthusiast',
   'Hardware & Firmware Curious',
-  'Low-Level Systems Thinker',
   'Powerlifting Athlete',
 ];
 

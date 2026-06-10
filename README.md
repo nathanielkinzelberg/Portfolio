@@ -14,8 +14,8 @@ portfolio/
 
 ## Sections
 
-- **Hero** — name, typing animation (6 roles), stats strip, floating code fragments
-- **About** — bio, skill tags, mini terminal card
+- **Hero** — name, typing animation (5 roles), stats strip, floating code fragments
+- **About** — bio, skill tags, mini terminal card (always dark)
 - **School Projects** — OS HW1 (Sync Primitives), OS HW2 (User-Level Threads)
 - **Personal Projects** — MIPS Simulator, Portfolio; "All Projects" dropdown below
 - **Resume** — PDF download + contact details
