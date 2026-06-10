@@ -14,7 +14,7 @@
 
   <!-- ── sticky nav ── -->
   <nav id="navbar">
-    <span class="nav-logo">&gt; nk</span>
+    <span class="nav-logo">Nathaniel Kinzelberg</span>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#school">School</a></li>
@@ -40,9 +40,28 @@
         <a href="#personal" class="btn btn-primary">View My Work</a>
         <a href="#contact" class="btn btn-outline">Get In Touch</a>
       </div>
+      <!-- quick facts strip -->
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-val">3rd Year</span>
+          <span class="stat-label">CS @ Reichman</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-val">#2 in Europe</span>
+          <span class="stat-label">Bench Press 2025</span>
+        </div>
+      </div>
     </div>
     <!-- decorative background grid -->
     <div class="hero-grid" aria-hidden="true"></div>
+    <!-- floating code fragments for depth -->
+    <div class="hero-floats" aria-hidden="true">
+      <span class="float f1">./run_exploit.sh</span>
+      <span class="float f2">#include &lt;stdio.h&gt;</span>
+      <span class="float f3">git push origin main</span>
+      <span class="float f4">ssh root@target</span>
+      <span class="float f5">gcc -o app main.c</span>
+    </div>
   </section>
 
   <!-- ── about ── -->
@@ -52,10 +71,9 @@
       <div class="about-grid">
         <div class="about-text">
           <p>
-            I'm a 3rd-year Computer Science student at Reichman University in Israel, with a strong
-            focus on cybersecurity and a long-term goal of becoming a Red Team specialist. I have
-            hands-on experience from internships in IT and cybersecurity, and I enjoy building
-            low-level systems and understanding how things work under the hood.
+            I'm a 3rd-year CS student at Reichman University. Long-term I want to be a Red Team specialist,
+            but honestly I'm interested in all of it — hardware, firmware, software. Computers in general
+            fascinate me and I'm always looking for ways to learn more, whatever form that takes.
           </p>
           <p>
             Outside of tech, I'm an international powerlifting athlete — 2025 European silver medalist
@@ -81,44 +99,31 @@
   <section id="school">
     <div class="container">
       <h2 class="section-title">School Projects</h2>
-      <p class="section-sub">Academic work from coursework and labs.</p>
+      <p class="section-sub">Academic work from Reichman University.</p>
       <div class="card-grid">
 
-        <!-- card template — duplicate and fill in for each project -->
         <div class="card">
           <div class="card-header">
-            <i class="fa-solid fa-microchip card-icon"></i>
+            <i class="fa-solid fa-lock card-icon"></i>
             <div class="card-links">
-              <a href="https://github.com/nathanielkinzelberg/MIPS-Simulator" title="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/ar00ster18/OS-HW-1" title="GitHub"><i class="fa-brands fa-github"></i></a>
             </div>
           </div>
-          <h3>MIPS Simulator</h3>
-          <p>A simulation of how basic low-level instructions execute on a CPU, built to deepen understanding of computer architecture and instruction sets.</p>
-          <div class="card-tags"><span>C++</span><span>MIPS</span><span>Systems</span><span>Architecture</span></div>
+          <h3>OS HW1 — Sync Primitives</h3>
+          <p>Built semaphores, condition variables, and a read-write lock from scratch in C. Three progressively harder parts, each building on the last.</p>
+          <div class="card-tags"><span>C</span><span>Threads</span><span>Synchronization</span><span>OS</span></div>
         </div>
 
         <div class="card">
           <div class="card-header">
-            <i class="fa-solid fa-database card-icon"></i>
+            <i class="fa-solid fa-rotate card-icon"></i>
             <div class="card-links">
-              <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+              <!-- add GitHub repo link when available -->
             </div>
           </div>
-          <h3>Project Title</h3>
-          <p>Short description of what it does, what problem it solves, and what you learned.</p>
-          <div class="card-tags"><span>Python</span><span>SQL</span></div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <i class="fa-solid fa-network-wired card-icon"></i>
-            <div class="card-links">
-              <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <h3>Project Title</h3>
-          <p>Short description of what it does, what problem it solves, and what you learned.</p>
-          <div class="card-tags"><span>Java</span><span>Networking</span></div>
+          <h3>OS HW2 — User-Level Threads</h3>
+          <p>Implemented a user-level thread library with a round-robin scheduler, context switching via setjmp/longjmp, and preemption using SIGVTALRM. Collaborated with a classmate.</p>
+          <div class="card-tags"><span>C</span><span>Threads</span><span>Signals</span><span>OS</span></div>
         </div>
 
       </div>
@@ -134,10 +139,21 @@
 
         <div class="card">
           <div class="card-header">
+            <i class="fa-solid fa-microchip card-icon"></i>
+            <div class="card-links">
+              <a href="https://github.com/nathanielkinzelberg/MIPS_Simulator" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>MIPS Simulator</h3>
+          <p>Inspired by my Digital Architectures course, I built this on my own to truly understand how low-level CPU instructions execute. Simulates a MIPS processor in C++.</p>
+          <div class="card-tags"><span>C++</span><span>MIPS</span><span>Systems</span><span>Architecture</span></div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
             <i class="fa-solid fa-globe card-icon"></i>
             <div class="card-links">
-              <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
-              <a href="#" title="Live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/nathanielkinzelberg/portfolio" title="GitHub"><i class="fa-brands fa-github"></i></a>
             </div>
           </div>
           <h3>This Portfolio</h3>
@@ -145,31 +161,52 @@
           <div class="card-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
         </div>
 
-        <div class="card">
-          <div class="card-header">
-            <i class="fa-solid fa-terminal card-icon"></i>
-            <div class="card-links">
-              <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <h3>Project Title</h3>
-          <p>Short description. What does it do? Why did you build it?</p>
-          <div class="card-tags"><span>Python</span></div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <i class="fa-solid fa-code card-icon"></i>
-            <div class="card-links">
-              <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-          <h3>Project Title</h3>
-          <p>Short description. What does it do? Why did you build it?</p>
-          <div class="card-tags"><span>JavaScript</span></div>
-        </div>
-
       </div>
+
+      <!-- all projects dropdown -->
+      <details class="all-projects">
+        <summary>All Projects <i class="fa-solid fa-chevron-down"></i></summary>
+        <ul class="all-projects-list">
+          <!-- school first -->
+          <li>
+            <div class="ap-header">
+              <span class="ap-name">OS HW1 — Sync Primitives</span>
+              <span class="ap-tags"><span>C</span><span>OS</span></span>
+              <span class="ap-type school">School</span>
+            </div>
+            <p>Semaphores, condition variables, and read-write locks built from scratch. Three progressive parts.</p>
+            <a href="https://github.com/ar00ster18/OS-HW-1" target="_blank" rel="noopener">GitHub &rarr;</a>
+          </li>
+          <li>
+            <div class="ap-header">
+              <span class="ap-name">OS HW2 — User-Level Threads</span>
+              <span class="ap-tags"><span>C</span><span>OS</span></span>
+              <span class="ap-type school">School</span>
+            </div>
+            <p>User-level thread library with round-robin scheduler, context switching via setjmp/longjmp, and SIGVTALRM preemption.</p>
+          </li>
+          <!-- personal second -->
+          <li>
+            <div class="ap-header">
+              <span class="ap-name">MIPS Simulator</span>
+              <span class="ap-tags"><span>C++</span><span>Systems</span></span>
+              <span class="ap-type personal">Personal</span>
+            </div>
+            <p>Inspired by my Digital Architectures course. Simulates how low-level MIPS CPU instructions execute cycle by cycle.</p>
+            <a href="https://github.com/nathanielkinzelberg/MIPS_Simulator" target="_blank" rel="noopener">GitHub &rarr;</a>
+          </li>
+          <li>
+            <div class="ap-header">
+              <span class="ap-name">Portfolio</span>
+              <span class="ap-tags"><span>HTML</span><span>CSS</span><span>JS</span></span>
+              <span class="ap-type personal">Personal</span>
+            </div>
+            <p>This site. Plain HTML/CSS/JS, no frameworks.</p>
+            <a href="https://github.com/nathanielkinzelberg/portfolio" target="_blank" rel="noopener">GitHub &rarr;</a>
+          </li>
+        </ul>
+      </details>
+
     </div>
   </section>
 
@@ -198,9 +235,18 @@
           <i class="fa-solid fa-shield-halved cert-icon"></i>
           <div class="cert-info">
             <h4>SEC0 — Pre-Security</h4>
-            <p>TryHackMe &mdash; <span class="cert-date">2025</span></p>
+            <p>TryHackMe &mdash; <span class="cert-date">18/05/2026</span></p>
           </div>
           <a href="https://assets.tryhackme.com/certification-certificate/6a0b42a9264d321dec2eff75.pdf" class="cert-verify" target="_blank" rel="noopener">Verify</a>
+        </div>
+
+        <!-- in-progress cert -->
+        <div class="cert-card cert-in-progress">
+          <i class="fa-solid fa-skull-crossbones cert-icon"></i>
+          <div class="cert-info">
+            <h4>Web Penetration Testing <span class="badge-progress">In Progress</span></h4>
+            <p>HackTheBox &mdash; <span class="cert-date">Course + Certification</span></p>
+          </div>
         </div>
 
       </div>
