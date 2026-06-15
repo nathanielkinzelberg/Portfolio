@@ -26,6 +26,7 @@ C, C++, Python, Java, JavaScript, HTML/CSS, SQL, Git, Linux, Cybersecurity
 
 ### Personal
 - **MIPS_Simulator** (C++) — simulates how basic CPU instructions execute; `~/Projects/MIPS-Simulator`, github.com/nathanielkinzelberg/MIPS_Simulator
+- **The Log** (React/JS) — personal journal viewer, training logs as a wooden bookcase UI; `~/Projects/the-log`, github.com/nathanielkinzelberg/the-log, live: nathanielkinzelberg.github.io/the-log
 - **Portfolio** — this site; github.com/nathanielkinzelberg/portfolio
 
 ### School (Reichman University)
