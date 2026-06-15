@@ -9,6 +9,7 @@
 - **Location:** Ra'anana, Israel / Englewood, NJ (dual resident)
 - **Phone IL (SMS):** +972 053-476-1356
 - **Phone US (WhatsApp):** +1 (201) 220-4994
+- **Resume Link: https://docs.google.com/document/d/1WT2u_DCddZoBbxA-bRbOMn_2627rg_L5NhpvMjq0ZRg/edit?tab=t.0
 
 ## Background
 
