@@ -93,7 +93,7 @@ const observer = new IntersectionObserver(entries => {
       if (active) active.style.color = 'var(--accent)';
     }
   });
-}, { threshold: 0.4 });
+}, { threshold: 0.15 });
 
 sections.forEach(s => observer.observe(s));
 

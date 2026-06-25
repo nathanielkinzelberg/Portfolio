@@ -148,6 +148,20 @@ img { max-width: 100%; }
   color: var(--accent);
   border: 1px solid var(--accent);
 }
+.resume-link-wrap {
+  margin-top: 28px;
+  text-align: center;
+}
+.resume-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition), opacity var(--transition);
+}
+.resume-link:hover { opacity: 0.75; }
 
 /* ── section shared styles ── */
 section {
@@ -230,7 +244,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 0;
-  margin-top: 48px;
+  margin-top: 28px;
   flex-wrap: wrap;
 }
 .hero-stat {
@@ -549,6 +563,7 @@ section {
 .resume-contact i { color: var(--accent); width: 14px; text-align: center; }
 
 /* ── certifications ── */
+#certs { padding-bottom: 140px; }
 .cert-grid { display: flex; flex-direction: column; gap: 16px; }
 .cert-card {
   display: flex;
