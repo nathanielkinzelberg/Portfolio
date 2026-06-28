@@ -158,6 +158,20 @@
           </div>
         </div>
 
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-hard-drive card-icon"></i>
+          </div>
+          <h3>OS HW3 — OnlyFiles</h3>
+          <p>Block-based filesystem library in C. Manages a 10 MB virtual disk with a fixed layout: superblock, bitmap, inode table, and data blocks. Full API implemented using only POSIX system calls, no stdio and no malloc.</p>
+          <div class="card-tags"><span>C</span><span>Filesystems</span><span>Low-level I/O</span><span>OS</span></div>
+          <div class="card-footer">
+            <a href="https://github.com/nathanielkinzelberg/OS-HW-3" class="card-btn" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -242,6 +256,15 @@
             <p>User-level thread library with round-robin scheduler, context switching via setjmp/longjmp, and SIGVTALRM preemption.</p>
             <a href="#contact" class="ap-contact">Get In Touch &rarr;</a>
           </li>
+          <li>
+            <div class="ap-header">
+              <span class="ap-name">OS HW3 — OnlyFiles</span>
+              <span class="ap-tags"><span>C</span><span>Filesystems</span><span>OS</span></span>
+              <span class="ap-type school">School</span>
+            </div>
+            <p>Block-based filesystem library. Manages a 10 MB virtual disk using only POSIX system calls. Full inode-based API: format, mount, create, read, write, delete.</p>
+            <a href="https://github.com/nathanielkinzelberg/OS-HW-3" target="_blank" rel="noopener">GitHub &rarr;</a>
+          </li>
           <!-- personal second -->
           <li>
             <div class="ap-header">
@@ -288,8 +311,8 @@
         </a>
         <div class="resume-contact">
           <span><i class="fa-solid fa-envelope"></i> nathanielkinzelberg@icloud.com</span>
-          <span><i class="fa-brands fa-linkedin"></i> linkedin.com/in/nathaniel-kinzelberg</span>
-          <span><i class="fa-brands fa-github"></i> github.com/nathanielkinzelberg</span>
+          <a href="https://www.linkedin.com/in/nathaniel-kinzelberg" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/nathaniel-kinzelberg</a>
+          <a href="https://github.com/nathanielkinzelberg" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> github.com/nathanielkinzelberg</a>
           <span><i class="fa-solid fa-phone"></i> +972 053-476-1356 SMS</span>
           <span><i class="fa-brands fa-whatsapp"></i> +1 (201) 220-4994</span>
         </div>
@@ -331,9 +354,9 @@
     <div class="container">
       <h2 class="section-title">Get In Touch</h2>
       <p class="contact-sub">I'm open to opportunities, collaborations, or just a conversation.</p>
-      <a href="mailto:nathanielkinzelberg@icloud.com" class="btn btn-primary contact-btn">
+      <button id="copy-email-btn" class="btn btn-primary contact-btn">
         <i class="fa-solid fa-envelope"></i> nathanielkinzelberg@icloud.com
-      </a>
+      </button>
       <div class="contact-details">
         <span><i class="fa-solid fa-phone"></i> +972 53-476-1356 <span class="contact-note">SMS</span></span>
         <span><i class="fa-brands fa-whatsapp"></i> +1 (201) 220-4994</span>

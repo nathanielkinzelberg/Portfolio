@@ -33,6 +33,7 @@ C, C++, Python, Java, JavaScript, HTML/CSS, SQL, Git, Linux, Cybersecurity
 ### School (Reichman University)
 - **OS HW1 — Sync Primitives** (C) — semaphores, condition variables, read-write locks; github.com/ar00ster18/OS-HW-1
 - **OS HW2 — User-Level Threads** (C) — user-level thread library, round-robin scheduler, setjmp/longjmp context switching, SIGVTALRM preemption
+- **OS HW3 — OnlyFiles** (C) — block-based filesystem library; 10 MB virtual disk, fixed layout (superblock/bitmap/inodes/data), full POSIX-only API; github.com/nathanielkinzelberg/OS-HW-3
 
 ## Certifications
 
@@ -53,10 +54,14 @@ Key design choices:
 - Toggle button (sun/moon) in nav; preference saved to localStorage; dark is the default
 - Terminal card in About stays dark in both themes
 - Hero: pulsing glow on name, typing animation (5 roles), stats strip, floating code fragments
+- Hero buttons: one primary (View My Work) + one outline (Get In Touch). "View Resume" sits below as a small accent-colored text link pointing to #resume
 - About: mini terminal card showing whoami + interests + goals
 - Project cards: equal height via flexbox, tags + GitHub/contact button pinned to bottom
 - All Projects dropdown: sorted School first, then Personal, with type tags
 - Cards without a GitHub repo get a "Get In Touch" button linking to #contact
+- Resume section contact row: GitHub and LinkedIn are clickable links (default `--text` color, accent on hover); email and phone numbers are plain text spans
+- Get In Touch email button: clicks copy the address to clipboard, shows a green toast notification at the bottom of the screen
+- Certifications section has extra bottom padding (140px) and scroll spy threshold is 0.15 so it doesn't get skipped
 
 ## Tone & copy preferences
 

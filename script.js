@@ -120,6 +120,21 @@ cards.forEach(card => {
 // triggered when card enters view
 document.addEventListener('animationend', () => {});
 
+// ── copy email to clipboard ──
+const copyEmailBtn = document.getElementById('copy-email-btn');
+copyEmailBtn.addEventListener('click', () => {
+  navigator.clipboard.writeText('nathanielkinzelberg@icloud.com');
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.textContent = 'Copied to clipboard!';
+  document.body.appendChild(toast);
+  setTimeout(() => toast.classList.add('toast-show'), 10);
+  setTimeout(() => {
+    toast.classList.remove('toast-show');
+    toast.addEventListener('transitionend', () => toast.remove());
+  }, 2000);
+});
+
 // patch: use classList instead of animationend for the fade
 const style = document.createElement('style');
 style.textContent = `.card.visible, .cert-card.visible { opacity: 1 !important; transform: translateY(0) !important; }`;
